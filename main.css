@@ -18,3 +18,9 @@ body {
 a:visited {
   color: gold;
 }
+a:hover {
+  color: aqua;
+}
+a:active {
+  color: blue;
+}

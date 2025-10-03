@@ -23,3 +23,15 @@ body {
 a:visited {
     color: chartreuseS;
 }
+a:hover {
+    color: aqua;
+}
+a:active {
+    color: blue;
+}
+.logo {
+    color: antiquewhite;
+}
+a {
+    color:blanchedalmond;
+}
