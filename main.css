@@ -24,3 +24,7 @@ a:hover {
 a:active {
   color: blue;
 }
+.thinglogo {
+  width: 200px;
+  height: 200px;
+}
