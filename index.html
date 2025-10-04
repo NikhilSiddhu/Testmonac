@@ -8,13 +8,17 @@
     <link rel="icon" href="CONTENT/PHOTOS/Con.png" type="images/x-icon">
   </head>
   <body>
-    <main>
-      <div class="start">
-       <h1>NEUROGRAM</h1>
-        <hr>
-        
-      <nav>
+    
+    <header>
+      <h1>NEUROGRAM</h1>   
+      <nav aria-labelledby="primary-navigation">
+        <h3 id="primary-navigation">Navigate</h3>
+      <!--or-nav aria-label="primary-navigation">
+          without any heading-->
          <ul>
+          <li>
+            <a class="short" href="#start">Start</a>
+          </li>
           <li>
             <a class="short" href="#html">Learning HTML </a>
           </li>
@@ -26,9 +30,11 @@
           </li>
          </ul>  
       </nav>
-     
+    </header>  
+    <main>
+      <div id="start" class="start">
         <hr>
-        <section id="html"><h3>Learn html<em> In few minutes</em></h3>
+        <article id="html"><h3>Learn html<em> In few minutes</em></h3>
         <p>&nbsp;&nbsp;&nbsp;Learn html<strong> In few $ minutes</strong></p>
         <hr>
         <img class="thinglogo" src="CONTENT/PHOTOS/Con.png" height="1563" width="1563" alt="logo" title="LOGO">
@@ -48,9 +54,11 @@
         </address>
          <!--TODO: Add more tags-->
          <!--Learn other & these tags-->
-        </section>
-      </div>
-
+        </article>
+        <!--in place of article a section can also be used. Article for more broader specrum and inside that article add sections inside it-->
+    </div>
+       <!--div for only CSS and no cementic meaning and can be put anywhere but to interpret other things are needed to be added
+       2nd is the span - in css only and no menaing in themseles and doesnt chang anything in only HTML work only sementic elements only first get better at baisc html strucutre code-->
       <hr>
       <section id="List1">
       <h3>Lists</h3>
@@ -61,16 +69,61 @@
           <li>Are</li>
           <li>You</li>
         </ol>
+        <aside>
+          <details>
+            <summary>
+              Guess the number of <mark>hours</mark> i code per day            
+            </summary>
+              <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time></p>
+            <!-- 1) <p>I start at 8 am and I write code for three hours.</p>  Add this like this or the mentioned above the result is same but the above one provides the meaning to the code the system that is reading it.
+              2) And also the mark tag is used for highlighting the test, as strong and b for bold and i and em (emphasize) for italics  -->
+
+
+          </details>
+        </aside>
+        <!--section used for putting a question and answer next to it like here we have put first summary and then have added a paragraph which tells the answer for it which can be seen in the website
+        this can provide details and also like a quiz-->
       </div>
       </section>
+
         <hr>
+
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>
+              <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+            </td>
+            <td>Write Code</td>
+          </tr>
+          <tr>
+            <td>
+              <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+            </td>
+            <td>Eat Lunch</td>
+          </tr>
+          <tr>
+            <td>
+              <time datetime="12:00">12pm</time>-<time datetime="17:00">17pm</time>
+            </td>
+            <td>Other Courses</td>
+          </tr>
+          <tr>
+            <td rowspan="2">All other time</td>
+            <td>Free time</td>
+            <td>Sleep</td>
+          </tr>
+        </table>
         <figure>
      <img src="CONTENT/PHOTOS/IMG_1832.jpeg" alt="Is it any" loading="lazy" title="Have you read it " width="200" height="300">
      <figcaption>
       Just a Book
      </figcaption>
-    </figure>
-    <div>
+     </figure>
+     <div>
       <section id="List2">
         <h3>Lists</h3>
         <ul>
@@ -101,6 +154,30 @@
         </figcaption>
       </figure>
       <hr>
+      <br>
+       <table>
+        <tr>
+          <th>INDEX</th>
+          <th>Explain</th>
+        </tr>
+        <tr>
+          <td>Countries</td>
+          <td>Switzerland</td>
+        </tr>
+        <tr>
+          <td>Residency</td>
+          <td>Extreme</td>
+        </tr>
+        <tr>
+          <td>Life</td>
+          <td>Best</td>
+        </tr>
+        <tr>
+          <td colspan="2">Accepted</td>
+        </tr>
+       </table>
+       <br>
+      <hr>
       <a class="google" href="https://www.google.com">Google</a> 
 
       <p>
@@ -109,9 +186,12 @@
      
     </main>
     <hr>
-    &lt;&lt;&lt; &copy; <a  class="about" href="about.html" target="_blank">Nikhil Siddhu</a>&gt;&gt;&gt;
+    <footer>  
+    <p>&lt;&lt;&lt; &copy; <a  class="about" href="about.html" target="_blank">Nikhil Siddhu</a>&gt;&gt;&gt;
+    </p>
     <p>
      Just started... 
     </p>
+  </footer>
   </body>
 </html>
