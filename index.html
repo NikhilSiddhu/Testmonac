@@ -8,7 +8,7 @@
     <link rel="icon" href="CONTENT/PHOTOS/Con.png" type="images/x-icon">
   </head>
   <body>
-    
+    <!--Do row again
     <header>
       <h1>NEUROGRAM</h1>   
       <nav aria-labelledby="primary-navigation">
@@ -87,36 +87,54 @@
       </section>
 
         <hr>
-
+      <section>
         <table>
+          <caption>My Daily Schedule</caption>
+          <thead>
           <tr>
-            <th>Time</th>
-            <th>Activity</th>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <!--add scope as a cementic to all the th values and also id and hearder if added both and inplace of both add only scope-->
+            <th scope="col">Activity</th>
           </tr>
+        </thead> <!--a cementic element thead and tbody also the tfoot-->
+        <tbody>
           <tr>
+            <th scope="row">Morning</th>
             <td>
               <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
             </td>
             <td>Write Code</td>
           </tr>
           <tr>
+            <th scope="row">Break</th>
             <td>
               <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
             </td>
             <td>Eat Lunch</td>
           </tr>
           <tr>
+            <th scope="row">Afternoon</th>
             <td>
               <time datetime="12:00">12pm</time>-<time datetime="17:00">17pm</time>
             </td>
             <td>Other Courses</td>
           </tr>
           <tr>
+            <th scope="row">Evening</th>
             <td rowspan="2">All other time</td>
             <td>Free time</td>
+          </tr>
+          <tr>
+            <th scope="row">Night</th>
             <td>Sleep</td>
           </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3">Ans thats what I do every day Code, eat, sleep repaet</td>
+        </tfoot>
         </table>
+      </section>
         <figure>
      <img src="CONTENT/PHOTOS/IMG_1832.jpeg" alt="Is it any" loading="lazy" title="Have you read it " width="200" height="300">
      <figcaption>
@@ -156,10 +174,14 @@
       <hr>
       <br>
        <table>
+        <caption>Live Abroad</caption>
+        <thead>
         <tr>
-          <th>INDEX</th>
-          <th>Explain</th>
+          <th scope="col">INDEX</th>
+          <th scope="col">Explain</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
           <td>Countries</td>
           <td>Switzerland</td>
@@ -172,9 +194,16 @@
           <td>Life</td>
           <td>Best</td>
         </tr>
+      </tbody>
+      <tfoot>
         <tr>
           <td colspan="2">Accepted</td>
+
         </tr>
+        <tr>
+          <td colspan="2">Apply Now!</td>
+        </tr>
+      </tfoot>
        </table>
        <br>
       <hr>
